@@ -98,10 +98,10 @@ namespace HT16K33_duinotech {
         "b": 0b0000000011111100,
         "c": 0b0000000011011000,
         "d": 0b0000000011011110,
-        "e": 0b0000100001011000,
+        "e": 0b0000000011111011,
         "f": 0b0000000001110001,
-        "g": 0b0000010010001110,
-        "h": 0b0001000001110000,
+        "g": 0b0000010011101111,
+        "h": 0b0001000011110100,
         "i": 0b0001000000000000,
         "j": 0b0000000000001110,
         "k": 0b0011011000000000,
@@ -270,8 +270,8 @@ namespace HT16K33_duinotech {
             /* assume its 4 digits */
             clear();
             for (let i = 0; i < s.length; ++i) {
-                //let p = 4 - s.length + i;
-                writeAscii(i, s.charAt(i));
+                let p = 4 - s.length + i;
+                writeAscii(p, s.charAt(i));
             }
         }
         writeDisplay();
