@@ -72,7 +72,7 @@ namespace HT16K33_duinotech {
         "H": 0b0000000011110110,
         "I": 0b0001001000001001,
         "J": 0b0000000000011110,
-        "K": 0b0010010001110000,
+        "K": 0b0000110001110000,
         "L": 0b0000000000111000,
         "M": 0b0000010100110110,
         "N": 0b0010000100110110,
@@ -244,7 +244,7 @@ namespace HT16K33_duinotech {
      */
     //% weight=96
     //% blockId=alnum_print_number 
-    //% block="show|number %value" blockGap=8
+    //% block="show|number %value Scroll interval:%interval" blockGap=8
     //% async rightAlign.defl=1 interval.defl=250
     export function showNumber(value: number, rightAlign?: boolean, interval?: number): void {
         if (interval < 0) {
