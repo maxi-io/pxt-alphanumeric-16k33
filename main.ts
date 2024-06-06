@@ -244,7 +244,7 @@ namespace HT16K33_duinotech {
      */
     //% weight=96
     //% blockId=alnum_print_number 
-    //% block="show|number %value Scroll interval:%interval" blockGap=8
+    //% block="show|number %value Right Align:$rightAlign Scroll interval:%interval" blockGap=8
     //% async rightAlign.defl=1 interval.defl=250
     export function showNumber(value: number, rightAlign?: boolean, interval?: number): void {
         if (interval < 0) {
