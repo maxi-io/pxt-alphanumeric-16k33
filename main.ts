@@ -100,7 +100,7 @@ namespace HT16K33_duinotech {
         "d": 0b0000000011011110,
         "e": 0b0000000011111011,
         "f": 0b0000000001110001,
-        "g": 0b0000010011101111,
+        "g": 0b0000000011101111,
         "h": 0b0000000011110100,
         "i": 0b0001001000001001,
         "j": 0b0000000000011110,
@@ -230,7 +230,7 @@ namespace HT16K33_duinotech {
      * Prints a text on the alnum display, will scroll with interval if more than 4 letters 
      */
     //% weight=87 blockGap=8
-    //% block="show|string %text" 
+    //% block="show|string %text Scroll interval:%interval" 
     //% async
     //% blockId=alnum_print_message
     //% icon="\uf1ec" interval.defl=250
